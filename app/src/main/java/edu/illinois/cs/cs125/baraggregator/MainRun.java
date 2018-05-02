@@ -9,7 +9,7 @@ public class MainRun {
     public static void main(String[] args) {
 
 
-        Document fridaySpecials = pullHTML("http://www.drinkspecialschampaign.com/friday-drink-specials.html");
+        Document fridaySpecials = pullHTML("http://www.drinkspecialschampaign.com/monday-drink-specials.html");
         String[][] fridaySplit = getSpecials(fridaySpecials);
         String[] bars = HTMLPull.getBars(fridaySpecials);
         for (int i = 0; i < fridaySplit.length; i++) {
